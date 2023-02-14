@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var porcentagem = parseFloat(prompt("Digite a porcentagem:"));
+
+    var tempo = parseInt(prompt("Digite os Dias:"));
+
+    var diasPadroes = 30;
+
+    var calculoDePorcentagemPeloTempo = (porcentagem / diasPadroes) * tempo;
+
+    var resultado = calculoDePorcentagemPeloTempo;
+ 
+    mostra("O Resultado é: " + resultado);
+    
+</script>

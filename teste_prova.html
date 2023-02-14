@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {    
+
+        document.write(frase);
+        pulaLinha();
+    }
+    function sorteia(n) {
+        return Math.round(Math.random() * n);
+    }
+
+    var chute = parseInt(prompt("Chute seu numero entre 0 a 5"));
+
+    var numeroPensado = sorteia(5);
+
+    if(chute == numeroPensado) {
+        mostra("Você acertou o número, " + numeroPensado  + " !!");
+    }else{
+        mostra("Você errou o número, " + numeroPensado + " !!");
+    }
+
+</script>
